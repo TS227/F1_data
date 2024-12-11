@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_12_11_083521) do
+ActiveRecord::Schema[8.0].define(version: 2024_12_11_103244) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -146,5 +146,63 @@ ActiveRecord::Schema[8.0].define(version: 2024_12_11_083521) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["race_id"], name: "index_races_on_race_id", unique: true
+  end
+
+  create_table "results", force: :cascade do |t|
+    t.integer "result_id"
+    t.integer "race_id"
+    t.integer "driver_id"
+    t.integer "constructor_id"
+    t.integer "number"
+    t.integer "grid"
+    t.integer "position"
+    t.string "position_text"
+    t.integer "position_order"
+    t.decimal "points"
+    t.integer "laps"
+    t.string "time"
+    t.integer "milliseconds"
+    t.integer "fastest_lap"
+    t.integer "rank"
+    t.string "fastest_lap_time"
+    t.decimal "fastest_lap_speed"
+    t.integer "status_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "seasons", force: :cascade do |t|
+    t.integer "year"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sprint_results", force: :cascade do |t|
+    t.integer "result_id"
+    t.integer "race_id"
+    t.integer "driver_id"
+    t.integer "constructor_id"
+    t.integer "number"
+    t.integer "grid"
+    t.integer "position"
+    t.string "position_text"
+    t.integer "position_order"
+    t.decimal "points"
+    t.integer "laps"
+    t.string "time"
+    t.integer "milliseconds"
+    t.integer "fastest_lap"
+    t.string "fastest_lap_time"
+    t.string "status_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "statuses", force: :cascade do |t|
+    t.integer "status_id"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 end
