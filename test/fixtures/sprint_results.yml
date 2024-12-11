@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  result_id: 1
+  race_id: 1
+  driver_id: 1
+  constructor_id: 1
+  number: 1
+  grid: 1
+  position: 1
+  position_text: MyString
+  position_order: 1
+  points: 9.99
+  laps: 1
+  time: MyString
+  milliseconds: 1
+  fastest_lap: 1
+  fastest_lap_time: MyString
+  status_id: MyString
+
+two:
+  result_id: 1
+  race_id: 1
+  driver_id: 1
+  constructor_id: 1
+  number: 1
+  grid: 1
+  position: 1
+  position_text: MyString
+  position_order: 1
+  points: 9.99
+  laps: 1
+  time: MyString
+  milliseconds: 1
+  fastest_lap: 1
+  fastest_lap_time: MyString
+  status_id: MyString

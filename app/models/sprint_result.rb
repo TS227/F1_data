@@ -1,0 +1,2 @@
+class SprintResult < ApplicationRecord
+end

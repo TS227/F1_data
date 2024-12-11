@@ -25,4 +25,3 @@ namespace :import do
     ImportData.new.import_data("lib/tasks/CSVs/results.csv", hash, Result)
   end
 end
-x
