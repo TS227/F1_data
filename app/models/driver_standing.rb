@@ -1,0 +1,2 @@
+class DriverStanding < ApplicationRecord
+end

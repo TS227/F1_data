@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  constructor_standings_id: 1
+  race_id: 1
+  constructor_id: 1
+  points: 9.99
+  position: 1
+  position_text: MyString
+  wins: 1
+
+two:
+  constructor_standings_id: 1
+  race_id: 1
+  constructor_id: 1
+  points: 9.99
+  position: 1
+  position_text: MyString
+  wins: 1

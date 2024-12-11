@@ -1,0 +1,2 @@
+class ConstructorStanding < ApplicationRecord
+end

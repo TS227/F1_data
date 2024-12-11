@@ -1,0 +1,2 @@
+class PitStop < ApplicationRecord
+end

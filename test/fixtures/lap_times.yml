@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  race_id: 1
+  driver_id: 1
+  lap: 1
+  position: 1
+  time: MyString
+  milliseconds: 1
+
+two:
+  race_id: 1
+  driver_id: 1
+  lap: 1
+  position: 1
+  time: MyString
+  milliseconds: 1
