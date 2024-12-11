@@ -13,6 +13,6 @@ namespace :import do
         url: row_data["url"]
       }
     end
-    ImportData.new.import_data("lib/tasks/CSVs/drivers.csv", hash, Drivers)
+    ImportData.new.import_data("lib/tasks/CSVs/drivers.csv", hash, Driver)
   end
 end
